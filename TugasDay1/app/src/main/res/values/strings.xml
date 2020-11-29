@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TugasDay1</string>
+    <string name="text1">Kendalikan uang dan kartu debitmu</string>
+    <string name="text2">Gak lagi khawatir boros atau kehilangan kartu! Atur dengan Card Center</string>
+    <string name="akun">SAYA SUDAH PUNYA AKUN</string>
+    <string name="register">REGISTER</string>
+    <string name="version">Version 2.28.1 (7447)</string>
+
+</resources>

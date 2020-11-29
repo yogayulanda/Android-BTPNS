@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/logo_white" />
+
+    <ImageView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="345dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/main" />
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/text1"
+        android:textAlignment="center"
+        android:textColor="@color/babyPowder"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/text2"
+        android:textAlignment="center"
+        android:textColor="@color/babyPowder"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/slider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="25dp"
+            android:layout_height="4dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/blackTrans" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="25dp"
+            android:layout_height="4dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/blackTrans" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="25dp"
+            android:layout_height="4dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/blackTrans" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="25dp"
+            android:layout_height="4dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/whiteTrans" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="25dp"
+            android:layout_height="4dp"
+            android:background="@color/blackTrans" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/bordered_button"
+        android:padding="13dip"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/akun"
+        android:textColor="@color/whiteTrans90"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/version"
+        android:textColor="@color/whiteTrans90" />
+</LinearLayout>
