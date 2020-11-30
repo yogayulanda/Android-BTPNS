@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        >
+
+        <TextView
+            android:id="@+id/headerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Daftar Nasabah"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/refreshTextView"
+            style="@style/floatingButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bt_gradient"
+            android:layout_below="@+id/headerTextView"
+            android:text="Masukan Data"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/nasabahListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="27dp"
+        />
+</LinearLayout>
