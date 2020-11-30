@@ -1,4 +1,4 @@
-package com.example.androidadapter;
+package com.example.tugasday2;
 
 import org.junit.Test;
 
