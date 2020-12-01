@@ -1,67 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".RegisterActivity">
-
-    <Toolbar
-        android:id="@+id/actionBar"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/teal_200"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
-        <LinearLayout
+        app:title="@string/berita">
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/titleAction"
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/toolbar_title"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Berita"
+                android:text="@string/berita"
                 android:textSize="20sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-            <ImageView
-                android:id="@+id/saveBtn"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_save"
                 android:layout_width="wrap_content"
+                android:layout_marginRight="20dp"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="12dp"
-                android:src="@android:drawable/ic_menu_save" />
-        </LinearLayout>
-    </Toolbar>
+                android:src="@drawable/ic_baseline_save_24"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.Toolbar>
 
-    <LinearLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="27dp"
-        android:layout_marginRight="27dp"
-        android:orientation="vertical"
-        android:layout_marginTop="27dp">
-        <EditText
-            android:id="@+id/titleET"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_title"
+            android:hint="@string/title"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Title"
-            android:textSize="16sp"
-            android:layout_marginBottom="10dp"/>
-        <EditText
-            android:id="@+id/tagsET"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_category"
+            android:hint="@string/category"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Tags"
-            android:textSize="16sp"
-            android:layout_marginBottom="10dp"/>
-        <EditText
-            android:id="@+id/urlET"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_url"
+            android:hint="@string/image"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Photo URL"
-            android:textSize="16sp"
-            android:layout_marginBottom="10dp"/>
-    </LinearLayout>
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
-
-</LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

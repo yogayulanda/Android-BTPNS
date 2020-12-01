@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TugasDay2</string>
+    <string name="title">Title</string>
+    <string name="category">Category</string>
+    <string name="image">Url Image</string>
+    <string name="berita">Berita</string>
 </resources>

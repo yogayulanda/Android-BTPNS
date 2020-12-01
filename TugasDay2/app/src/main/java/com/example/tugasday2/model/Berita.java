@@ -1,44 +1,37 @@
 package com.example.tugasday2.model;
 
-import android.os.Parcelable;
 
 import java.io.Serializable;
 
 public class Berita implements Serializable {
-    private String id;
-    private String judul;
-    private String tags;
-    private String photoURL;
+    private String title;
+    private String category;
+    private String image;
 
-    public String getId() {
-        return id;
+    public Berita () {
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public String getTitle() {
+        return title;
     }
 
-    public String getJudul() {
-        return judul;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public void setJudul(String judul) {
-        this.judul = judul;
+    public String getCategory() {
+        return category;
     }
 
-    public String getTags() {
-        return tags;
+    public void setCategory(String category) {
+        this.category = category;
     }
 
-    public void setTags(String tags) {
-        this.tags = tags;
+    public String getImage() {
+        return image;
     }
 
-    public String getPhotoURL() {
-        return photoURL;
-    }
-
-    public void setPhotoURL(String photoURL) {
-        this.photoURL = photoURL;
+    public void setImage(String image) {
+        this.image = image;
     }
 }
