@@ -14,11 +14,11 @@ import retrofit2.http.Body;
 import retrofit2.http.DELETE;
 
 public interface BeritaApi {
-    @GET("nasabah")
+    @GET("berita")
     Call<BeritasResponse> getNasabahsList(@Query("page") String page,
                                           @Query("limit") String limit);
 
-    @POST("nasabah")
+    @POST("berita")
     Call<BeritaResponse> postNasabah(@Body Berita body);
 
 }
