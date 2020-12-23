@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Welcome Back, \n You've been missed!"
+                android:fontFamily="@font/lregular"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:textColor="#1D2A64"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/helloIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loginImage"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/helloIV"
+                android:text="Login To Your Account"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lregular"
+                android:textSize="20dp"
+                android:textColor="#1D2A64" />
+
+            <EditText
+                android:id="@+id/loginusernameET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/helloIV"
+                android:layout_marginTop="60dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="left"
+                android:hint="Username"
+                android:inputType="text"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/loginpasswordET"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/loginusernameET"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="left"
+                android:hint="Password"
+                android:inputType="numberPassword"
+                android:textColor="@color/black" />
+
+
+            <Button
+                android:id="@+id/loginBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginpasswordET"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Login"
+                android:fontFamily="@font/lregular"
+                android:background="@drawable/ic_btn"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:id="@+id/registhintTV"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginBT"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/llight"
+                android:gravity="center"
+                android:text="Don't Have Account? Sign Up"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
